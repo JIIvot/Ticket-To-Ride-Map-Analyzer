@@ -4,7 +4,8 @@
 #include "Data.h"
 #include "Parser.h"
 
-Data* Parser::readData() {
+Data* Parser::readData()
+{
     const auto dataFile = toml::parse(DATA_FILE_PATH);
     const auto data = new Data;
 
@@ -28,7 +29,8 @@ Data* Parser::readData() {
     const auto trackEnds = toml::find<std::vector<std::string>>(dataFile, "trackEnds");
     const auto trackWagonsNum = toml::find<std::vector<uint32>>(dataFile, "trackWagonsNum");
 
-    for (int32 i = 0; i < trackStarts.size(); ++i) {
+    for (int32 i = 0; i < trackStarts.size(); ++i)
+    {
         const auto trackStartID = data->m_citiesMap[trackStarts[i]];
         const auto trackEndID = data->m_citiesMap[trackEnds[i]];
 

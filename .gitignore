@@ -14,4 +14,4 @@ Intermediates/
 libs/TOML11
 libs/SPDLOG
 
-**.exe
+.exe

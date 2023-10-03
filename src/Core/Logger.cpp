@@ -4,7 +4,8 @@
 
 std::shared_ptr<spdlog::logger> Logger::s_logger;
 
-void Logger::initialize() {
+void Logger::initialize()
+{
     spdlog::set_pattern("%^[%T] %n: %v%$");
 
     s_logger = spdlog::stdout_color_mt("Analyzer");

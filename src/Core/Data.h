@@ -6,13 +6,15 @@
 
 #include "Types.h"
 
-struct Route {
+struct Route
+{
     uint32 m_startID;
     uint32 m_endID;
     uint32 m_scores;
 };
 
-struct Data {
+struct Data
+{
     uint32 m_wagonsLimit;
     std::vector<std::string> m_cities;
     std::map<std::string, uint32> m_citiesMap;

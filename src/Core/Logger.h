@@ -3,7 +3,8 @@
 #include <memory>
 #include <spdlog/spdlog.h>
 
-class Logger {
+class Logger
+{
 public:
     Logger() = delete;
 

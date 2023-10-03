@@ -1,5 +1,5 @@
 #include "Core/Logger.h"
-#include "Core/Analyzer.h"
+#include "Core/Analyzer/Analyzer.h"
 #include "Core/Types.h"
 
 int32 main() {
