@@ -1,0 +1,25 @@
+# Индекс каждого города будет его id
+cities = ["HELENA", "DENVER", "PITTSB", "DULUTH", "OKLAHOMA", "ELPASO", "RALEIGH", "ATLANTA", "NASHVILLE", "LITTLEROCK", "SAINTLOUIS", "CHICAGO", "OMAHA", "TORONTO", "SALTLAKE", "KANSAS", "SEATTLE", "WINNIPEG", "WASHINGTON", "NEWYORK", "DALLAS", "LOSANGELES", "PHOENIX", "SANTAFE", "CALGARY", "SAULTSTMARIE", "NEWORLEAN", "SANFRANCISCO", "MIAMI", "PORTLAND", "HOUSTON", "CHARLESTON", "MONTREAL", "VANCOUVER", "LASVEGAS", "BOSTON"]
+
+# Массивы перегонов ВАЖНО: КАЖДЫЙ ИНДЕКС КАЖДОГО МАССИВА ДОЛЖНЫ СОВПАДАТЬ!
+# trackStarts - Старты перегонов то есть старт i перегона будет trackStarts[i]
+# trackEnds - Концы перегонов то есть конец i перегона будет trackStarts[i]
+# trackWagonsNum - Кол-во вагончиков для перегона то есть для i перегона это будет trackStarts[i]
+# trackIsDouble - Является ли i перегон двойным
+trackStarts = ["VANCOUVER", "VANCOUVER", "CALGARY", "CALGARY", "CALGARY", "SEATTLE", "SEATTLE", "PORTLAND", "PORTLAND", "SANFRANCISCO", "SANFRANCISCO", "LOSANGELES", "LOSANGELES", "LOSANGELES", "SALTLAKE", "SALTLAKE", "SALTLAKE", "PHOENIX", "PHOENIX", "PHOENIX", "HELENA", "HELENA", "HELENA", "HELENA", "SANTAFE", "SANTAFE", "SANTAFE", "ELPASO", "ELPASO", "ELPASO", "HOUSTON", "HOUSTON", "DALLAS", "DALLAS", "OKLAHOMA", "OKLAHOMA", "OKLAHOMA", "KANSAS", "KANSAS", "KANSAS", "OMAHA", "OMAHA", "OMAHA", "DULUTH", "DULUTH", "DULUTH", "DULUTH", "SAULTSTMARIE", "SAULTSTMARIE", "SAULTSTMARIE", "TORONTO", "TORONTO", "TORONTO", "CHICAGO", "CHICAGO", "PITTSB", "PITTSB", "PITTSB", "PITTSB", "PITTSB", "SAINTLOUIS", "SAINTLOUIS", "LITTLEROCK", "LITTLEROCK", "NASHVILLE", "NASHVILLE", "ATLANTA", "ATLANTA", "ATLANTA", "ATLANTA", "MIAMI", "MIAMI", "RALEIGH", "RALEIGH", "NEWYORK", "NEWYORK", "NEWYORK", "WASHINGTON"]
+trackEnds = ["SEATTLE", "CALGARY", "SEATTLE", "WINNIPEG", "HELENA", "PORTLAND", "HELENA", "SANFRANCISCO", "SALTLAKE", "SALTLAKE", "LOSANGELES", "LASVEGAS", "PHOENIX", "ELPASO", "HELENA", "DENVER", "LASVEGAS", "DENVER", "SANTAFE", "ELPASO", "WINNIPEG", "DULUTH", "OMAHA", "DENVER", "DENVER", "OKLAHOMA", "ELPASO", "OKLAHOMA", "DALLAS", "HOUSTON", "DALLAS", "NEWORLEAN", "OKLAHOMA", "LITTLEROCK", "DENVER", "KANSAS", "LITTLEROCK", "DENVER", "OMAHA", "SAINTLOUIS", "DENVER", "DULUTH", "CHICAGO", "WINNIPEG", "SAULTSTMARIE", "TORONTO", "CHICAGO", "WINNIPEG", "MONTREAL", "TORONTO", "MONTREAL", "CHICAGO", "PITTSB", "PITTSB", "SAINTLOUIS", "SAINTLOUIS", "NASHVILLE", "RALEIGH", "NEWYORK", "WASHINGTON", "NASHVILLE", "LITTLEROCK", "NASHVILLE", "NEWORLEAN", "RALEIGH", "ATLANTA", "NEWORLEAN", "MIAMI", "CHARLESTON", "RALEIGH", "NEWORLEAN", "CHARLESTON", "WASHINGTON", "CHARLESTON", "MONTREAL", "BOSTON", "WASHINGTON", "BOSTON"]
+trackWagonsNum = [1, 3, 4, 6, 4, 1, 6, 6, 6, 6, 3, 2, 3, 6, 3, 3, 3, 6, 3, 3, 4, 6, 5, 4, 2, 3, 2, 5, 4, 6, 1, 2, 2, 2, 4, 2, 2, 4, 1, 2, 4, 2, 4, 4, 3, 6, 3, 6, 5, 2, 3, 4, 2, 3, 2, 5, 4, 2, 2, 2, 2, 2, 3, 3, 3, 1, 4, 5, 2, 2, 6, 4, 2, 2, 3, 2, 2, 2]
+
+# Массивы маршрутов ВАЖНО: КАЖДЫЙ ИНДЕКС КАЖДОГО МАССИВА ДОЛЖНЫ СОВПАДАТЬ!
+# trackStarts - Старты маршрутов то есть старт i маршрута routeStarts[i]
+# trackEnds - Концы маршрутов то есть конец i маршрута routeEnds[i]
+# trackScores - Очки за маршруты, то есть за i маршрут дадут routeScores[i] очков
+routeStarts = ["SEATTLE", "LOSANGELES", "LOSANGELES", "VANCOUVER", "PORTLAND", "SANFRANCISCO", "LOSANGELES", "CALGARY", "MONTREAL", "VANCOUVER", "BOSTON", "WINNIPEG", "DALLAS", "DENVER", "PORTLAND", "WINNIPEG", "DULUTH", "TORONRO", "CHICAGO", "MONTREAL", "SAULTSTMARIE", "SEATTLE", "DULUTH", "HELENA", "SAULTSTMARIE", "CALGARY", "CHICAGO", "NEWYORK", "KANSAS", "DENVER"]
+routeEnds = ["NEWYORK", "NEWYORK", "MIAMI", "MONTREAL", "NASHVILLE", "ATLANTA", "CHICAGO", "PHOENIX", "NEWORLEAN", "SANTAFE", "MIAMI", "HOUSTON", "NEWYORK", "PITTSB", "PHOENIX", "LITTLEROCK", "ELPASO", "MIAMI", "SANTAFE", "ATLANTA", "OKLAHOMA", "LOSANGELES", "HOUSTON", "LOSANGELES", "NASHVILLE", "SALTLAKE", "NEWORLEAN", "ATLANTA", "HOUSTON", "ELPASO"]
+routeScores = [22, 21, 20, 20, 17, 17, 16, 13, 13, 13, 12, 12, 11, 11, 11, 11, 10, 10, 9, 9, 9, 9, 8, 8, 8, 7, 7, 6, 5, 4]
+
+# Сколько очков дается за i кол-во вагонов
+scores = [1, 2, 4, 7, 10, 15]
+
+# Лимит на вагоны, иными словами сколько вагончиков у каждого игрока
+wagonsLimit = 45

@@ -1,0 +1,17 @@
+.idea/
+
+.vs/
+**.sln
+**.vcxproj
+**.vcxproj.filters
+**.vcxproj.user
+**.csproj
+
+**/bin/
+bin-int/
+Intermediates/
+
+libs/TOML11
+libs/SPDLOG
+
+**.exe
